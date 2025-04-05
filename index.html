@@ -13,9 +13,17 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="header">
+      <section class="header">
         <div class="header__main">
-          <div class="header__menu"></div>
+          <div class="header__menu">
+            <ul class="header__submenu">
+              <li><a href="#">item1</a></li>
+              <li><a href="#">item1</a></li>
+              <li><a href="#">item1</a></li>
+              <li><a href="#">item1</a></li>
+              <li><a href="#">item1</a></li>
+            </ul>
+          </div>
           <a class="logo" href="#">
             <img class="logo__img" src="images/tele-logo.svg" alt="" />
           </a>
@@ -37,19 +45,47 @@
             </li>
           </ul>
         </div>
-      </div>
+      </section>
       <main class="main">
         <section class="top">
           <div class="top__main">
             <h2 class="top__title">This is the way</h2>
-            <div class="circle"></div>
-            <p class="top__text">
-              Choosing our mattress is an investment in your health.Quality
-              sleep is essential for overall health and well-being, our
-              mattresses prioritize sleep health by creating a clean and
-              comfortable night’s sleep for yourself.We provide a good balance
-              of support and comfort.
-            </p>
+            <div class="circle-container">
+              <svg viewBox="0 0 200 200">
+                <defs>
+                  <!-- <path
+                    id="circle"
+                    d="
+                  M 50 50
+                  m -37 0
+                  a 37,37 0 1,1 74,0
+                  a 37,37 0 1,1 -74,0"
+                  /> -->
+                  <circle id="circle" cx="100" cy="100" r="50" fill="none">
+                </defs>
+
+                <text class="circle__container-text">
+                  <textPath xlink:href="#circle">
+                   For more information and support please contact us email AzftTechView@gmail.com
+                  </textPath>
+                </text>
+              </svg>
+              <div class="circle__container-image">
+                <img src="images/tele-logo1.svg" alt=""/>
+              </div>
+            </div>
+            <div class="top__quote">
+              <blockquote class="top__quote-text">
+                <span>"</span>
+                There’s the space that seems to be out there, like the sky and
+                the ocean and the wind, and there’s the space that seems to be
+                inside. We could let the whole thing mix up. We could let the
+                whole thing just dissolve into each other and into one big
+                space.
+                <span>"</span>
+              </blockquote>
+              <p class="top__quote-author">— Pema Chödron</p>
+            </div>
           </div>
         </section>
         <section class="question">
@@ -113,6 +149,6 @@
         </div>
       </div>
     </div>
-    <script src=""></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
