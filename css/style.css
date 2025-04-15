@@ -39,7 +39,7 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  background-image: url(../images/2148933764.jpg);
+  background-image: url(../images/back-img.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -201,8 +201,8 @@ body {
   object-fit: cover;
 } */
 .circle__container-image img {
-  width: 140px;
-  height: 140px;
+  width: 105px;
+  height: 105px;
   opacity: 0.5;
 }
 .top__quote {
